@@ -1,0 +1,33 @@
+<mat-grid-list cols="4" rows="8">
+    <mat-grid-tile>
+        <!-- Menu Nav Bar -->
+        <ul>
+            <li>
+                <a (click)="LoadImage(1)">Image 1</a>
+            </li>
+            <li>
+                <a (click)="LoadImage(2)">Image 2</a>
+            </li>
+            <li>
+                <a (click)="LoadImage(3)">Image 3</a>
+            </li>
+        </ul>
+        
+    </mat-grid-tile>
+    <mat-grid-tile colspan="3" rows="2">
+
+
+        <mat-grid-list cols="3" rows="1" class="thumbnails" gutterSize=20px>
+            <img [src]="links[0].src" class="thumb" />
+            <img [src]="links[1].src" class="thumb" />
+            <img [src]="links[2].src" class="thumb" />
+        </mat-grid-list>
+
+
+        <mat-grid-list cols="1">
+            <img [src]="imageUrl" class="image" />
+        </mat-grid-list>
+
+    </mat-grid-tile>
+
+</mat-grid-list>

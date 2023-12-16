@@ -1,0 +1,28 @@
+mat-grid-tile {
+  background: lightblue;
+}
+
+ul li {
+    list-style: none
+}
+
+a {
+    cursor: pointer
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover
+}
+
+thumbnails {
+    position:absolute;
+}
+
+.thumb {
+    position:relative;
+  width: 50px !important;
+  height: 50px !important;
+}
+
